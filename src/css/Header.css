@@ -18,6 +18,7 @@
   min-height: 12vh;
   display: flex;
   align-items: center;
+  background-color: #fff;
 }
 
 .status_button_left {

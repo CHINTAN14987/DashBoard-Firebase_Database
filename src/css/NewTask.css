@@ -37,12 +37,41 @@
   color: #e09a02;
   font-size: 20px;
 }
-.button_wrapper{
+.button_wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.button_wrapper button{
-  width: 8rem;
+.button_wrapper button {
+  width: 10rem;
   max-width: 100%;
+  margin-top: 2rem;
+  padding: 10px;
+}
+
+.cancelbutton {
+  border: 1px solid #c1c0c0;
+  color: #838283;
+  background-color: #fff;
+}
+
+.applybutton {
+  border: 1px solid #fa741f;
+  color: #fa741f;
+  background-color: #fff;
+}
+
+.Form_Wrapper label {
+  margin: 10px 0 !important;
+  color: #414952;
+  font-size: 15px;
+}
+
+.Form_Wrapper .ant-select-selector {
+  height: 50px !important;
+}
+.form_heading {
+  color: #8d8d8c;
+  margin: 1rem 0;
+  font-size: 18px;
 }
