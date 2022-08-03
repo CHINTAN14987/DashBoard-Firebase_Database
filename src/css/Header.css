@@ -1,51 +1,74 @@
 .button_traingle {
-    color: white;
-    width: 0px;
-    height: 0px;
-    border: 30px solid black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #00B140;
-      }
-
- .flex_wrapper{
-    display:flex ;
-    width: 100%;
-  
- }
-
- .status_button_left{
-flex:1;
-    background-color: #00B140;
-    border-right: transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #00B140;
-    position: relative;
-    
-    
- }
-
- .new_button_left{ flex:1;
-    background-color: #00B140;
-    border-right: transparent;
-    border: 30px solid black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: white;
-    position: relative;
+  color: white;
+  width: 0px;
+  height: 0px;
+  border: 30px solid black;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #2fbe6d;
 }
 
-    .header_container{
-        display: flex;
-        width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    span{ position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);}
+.flex_wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.Navbar_Progress {
+  min-height: 12vh;
+  display: flex;
+  align-items: center;
+}
+
+.status_button_left {
+  flex: 1;
+  background-color: #2fbe6d;
+  border-right: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #2fbe6d;
+  position: relative;
+}
+
+.new_button_left {
+  flex: 1;
+  background-color: #2fbe6d;
+  border-right: transparent;
+  border: 30px solid black;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: white;
+  position: relative;
+}
+
+.header_container {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header_container span {
+  position: absolute;
+  font-size: 1.5vw;
+  top: 50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+.new {
+  background-color: #fdf0d4;
+}
+
+.newtraingle {
+  border-left-color: #fdf0d4;
+}
+.working,
+.nurturing,
+.converted {
+  background-color: #e2e9f3;
+}
+.workingtriangle,
+.nurturingtriangle {
+  border-left-color: #e2e9f3;
+}

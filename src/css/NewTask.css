@@ -1,0 +1,38 @@
+.ant-form-item-required::after {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: "*";
+}
+
+.TaskSelect,
+.subject_wrapper,
+.AssignedTo_wrapper,
+.datePicker_Wrapper,
+.detail_text_Area_Wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Form_Wrapper {
+  display: flex;
+}
+.date_option_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.startDate_Wrapper,
+.endDate_Wrapper,
+.RemindDate_Wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.Form_Wrapper .ant-picker-suffix {
+  color: #e09a02;
+  font-size: 20px;
+}
