@@ -1,10 +1,9 @@
 import React from "react";
 import "../css/DisplayedTasks.css";
 import { data } from "../data";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const DisplayedTasks = () => {
-  const dispatch = useDispatch();
   const Addedvalue = useSelector((state) => state.task.item);
   return (
     <div>
@@ -34,25 +33,24 @@ const DisplayedTasks = () => {
             </div>
           );
         })}
-        <button>View More</button>
-
         {Addedvalue ? (
-          <>
+          <div className="addeditems_wrapper">
             {Addedvalue.map((item) => {
               return (
                 <div key={item.id}>
                   <span>{item.id}</span>
-                  {/* <span>{item.type}</span> */}
-                  <span>{item.aissgnedTo} To</span>
+                  <span>{item.newtask}</span>
+                  <span>{item.aissgnedTo} </span>
                   <span>{item.endDate}</span>
-                  {/* <span>{Status}</span> */}
+                  <span>{item.subject}</span>
                 </div>
               );
             })}
-          </>
+          </div>
         ) : (
           <></>
         )}
+        <button>View More</button>
       </div>
     </div>
   );

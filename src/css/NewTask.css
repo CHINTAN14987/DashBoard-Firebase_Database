@@ -20,6 +20,7 @@
 
 .Form_Wrapper {
   display: flex;
+  justify-content: space-between;
 }
 .date_option_wrapper {
   display: flex;

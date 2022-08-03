@@ -6,3 +6,6 @@
     display: flex;
 }
 .taskRow span{flex:1}
+
+.addeditems_wrapper span{flex:1}
+.addeditems_wrapper div{display: flex;}
