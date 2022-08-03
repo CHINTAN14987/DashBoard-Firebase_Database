@@ -32,3 +32,31 @@ export const data = [
     Status: "Not Started",
   },
 ];
+
+export const StatusData = [
+  {
+    productStatus: "Informed Product Features",
+    date: new Date().toDateString(),
+    liveStatus: "you Contacted with",
+  },
+  {
+    productStatus: "Send Product Brochure",
+    date: new Date().toDateString(),
+    liveStatus: "you Contacted with",
+  },
+  {
+    productStatus: "Send Product Brochure",
+    date: new Date().toDateString(),
+    liveStatus: "you Contacted with",
+  },
+  {
+    productStatus: "Informed Product Features",
+    date: new Date().toDateString(),
+    liveStatus: "you Contacted with",
+  },
+  {
+    productStatus: "Informed Product Features",
+    date: new Date().toDateString(),
+    liveStatus: "you Contacted with",
+  },
+];
