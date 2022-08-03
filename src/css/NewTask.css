@@ -36,3 +36,12 @@
   color: #e09a02;
   font-size: 20px;
 }
+.button_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_wrapper button{
+  width: 8rem;
+  max-width: 100%;
+}

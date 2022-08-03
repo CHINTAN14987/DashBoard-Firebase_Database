@@ -1,0 +1,8 @@
+.DisplayedResult_Table_Header{
+    display: flex;
+}
+.DisplayedResult_Table_Header span{flex:1}
+.taskRow{
+    display: flex;
+}
+.taskRow span{flex:1}
