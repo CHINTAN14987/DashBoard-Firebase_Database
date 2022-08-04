@@ -6,7 +6,7 @@
     margin: 10px 0;
     display: flex;justify-content: space-between;
 }
-.card span{display: flex;
+.icon_wrapper{display: flex;
 align-items: center;
 justify-content: center;
 }
@@ -22,3 +22,6 @@ justify-content: center;
 .icon_wrapper span{
     border-radius: 50%;
 border: 1px solid blue ;}
+
+.name{color: #db9404;}
+.card_wrapper .ant-card {width: 350px !important;}

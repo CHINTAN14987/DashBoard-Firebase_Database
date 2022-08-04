@@ -26,7 +26,7 @@ const CardComponent = () => {
                 <div>
                   <p>{productStatus}</p>
                   <p>
-                    {liveStatus} <span>{employeename}</span>
+                    {liveStatus} <span className="name">{employeename}</span>
                   </p>
                   <p>{date}</p>
                 </div>
