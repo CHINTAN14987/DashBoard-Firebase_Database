@@ -45,14 +45,7 @@ const DisplayedTasks = () => {
           <></>
         )}
         {data.map((item) => {
-          const {
-            id,
-            Status,
-            type,
-            subject,
-            ["Assigned To"]: Assigned,
-            ["Due Date"]: DueDate,
-          } = item;
+          const { id, Status, type, subject, Assigned, DueDate } = item;
           return (
             <div key={id} className="taskRow">
               <span>{id}</span>
@@ -64,7 +57,7 @@ const DisplayedTasks = () => {
                 {subject}
               </span>
               <span>{type}</span>
-              <span>{Assigned} To</span>
+              <span>{Assigned}</span>
               <span>{DueDate}</span>
               <span>{Status}</span>
             </div>

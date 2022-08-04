@@ -21,6 +21,7 @@
 .Form_Wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 .date_option_wrapper {
   display: flex;
@@ -53,7 +54,7 @@
   border: 1px solid #c1c0c0;
   color: #838283;
   background-color: #fff;
-  margin-right:10px
+  margin-right: 10px;
 }
 
 .applybutton {
@@ -67,9 +68,9 @@
   color: #414952;
   font-size: 15px;
 }
-.formwrapper_leftside{
-  flex:1;
-  padding-right:20px;
+.formwrapper_leftside {
+  flex: 1;
+  padding-right: 20px;
 }
 .Form_Wrapper .ant-select-selector {
   height: 50px !important;
@@ -79,11 +80,29 @@
   margin: 1rem 0;
   font-size: 18px;
 }
-@media screen and (max-width:990px){
-  .Form_Wrapper{flex-direction: column;
+@media screen and (max-width: 1200px) {
+  .formwrapper_leftside {
+    padding-right: 0;
   }
-    .formwrapper_leftside{
-  
-      padding-right:0;
-    }
+  .right_side_form {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .Form_Wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .button_wrapper {
+    flex-direction: column;
+  }
+  .date_option_wrapper {
+    flex-direction: column;
+  }
+  .innerHeader {
+    justify-content: center;
+  }
 }

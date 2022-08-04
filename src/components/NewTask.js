@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { DatePicker } from "antd";
 import { Select, Input } from "antd";
 import "../css/NewTask.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { taskactions } from "./features/taskSlice";
 const { Option } = Select;
 
@@ -16,9 +16,7 @@ const NewTask = () => {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
   const [remindDate, setRemindDate] = useState("");
-  const [finaliseddata, setFinalizedData] = useState([]);
   const dispatch = useDispatch();
-  const value = useSelector((state) => state.task.item);
 
   const onChangeStartDate = (date, dateString) => {
     setStartDate(dateString);
@@ -33,7 +31,6 @@ const NewTask = () => {
     setInput({ ...input, [e.target.name]: e.target.value });
   };
   const handleSubmit = () => {
-    let newArr = [];
     dispatch(
       taskactions.taskCreation({
         id: new Date().getTime(),
@@ -46,8 +43,6 @@ const NewTask = () => {
         subject: input.subject,
       })
     );
-
-    setFinalizedData(newArr);
   };
 
   const handleCancel = () => {
@@ -179,6 +174,7 @@ const NewTask = () => {
           </div>
         </div>
       </div>
+      <div className="border"></div>
     </>
   );
 };
