@@ -11,7 +11,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        {/* <Header /> */}
+        <Header />
         <div className="activity_information_Mainwrapper">
           <div style={{ width: "100%" }}>
             <div className="activity_information_wrapper">
@@ -24,7 +24,7 @@ function App() {
 
         <div className="component_wrapper">
           <div className="component_wrapper_newTaskAndDisplayed">
-            {/* <div className="innerHeader">
+            <div className="innerHeader">
               <span>Log Calls</span>
               <span>Task</span>
               <span>Event</span>
@@ -32,9 +32,9 @@ function App() {
               <span>Add Attachment</span>
               <span>Activity Set</span>
               <span>Custom Field</span>
-            </div> */}
-            {/* <NewTask />
-            <DisplayedTasks /> */}
+            </div>
+            <NewTask />
+            <DisplayedTasks />
           </div>
           <CardComponent className="cardComponent_wrapper" />
         </div>

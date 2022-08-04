@@ -5,6 +5,7 @@
 
 .App {
   background-color: #f2f6f8;
+  padding: 20px;
 }
 .innerHeader {
   display: flex;
@@ -27,7 +28,8 @@
 .component_wrapper {
   display: flex;
   justify-content: space-around;
-  background-color: #fff;
+  background-color: white;
+ 
   padding: 30px;
 }
 .innerHeader span:nth-child(1) {
@@ -37,11 +39,7 @@
   padding-left: 0;
   padding-right: 0;
 }
-.component_wrapper {
-  display: flex;
-  justify-content: space-around;
-  background-color: #fff;
-}
+
 .activity_information_wrapper {
   display: flex;
   align-items: flex-end;
