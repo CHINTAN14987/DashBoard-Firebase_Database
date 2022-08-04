@@ -69,7 +69,7 @@ const NewTask = () => {
     <>
       <h3 className="form_heading">New Task</h3>
       <div className="Form_Wrapper">
-        <div style={{ flex: "1", paddingRight: "20px" }}>
+        <div className="formwrapper_leftside">
           <div className="TaskSelect">
             <label>New Task Type</label>
 
@@ -108,6 +108,7 @@ const NewTask = () => {
                   border: "2px solid #dee5f1",
                   borderRadius: "4px",
                   height: "50px",
+                  marginRight: "10px",
                 }}
                 placeholder="13-July-2022"
                 onChange={onChangeStartDate}

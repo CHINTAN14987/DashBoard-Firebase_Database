@@ -28,6 +28,7 @@
   display: flex;
   justify-content: space-around;
   background-color: #fff;
+  padding: 30px;
 }
 .innerHeader span:nth-child(1) {
   padding-left: 0;
@@ -71,8 +72,9 @@
 }
 
 .component_wrapper_newTaskAndDisplayed {
-  width: 60rem;
-  max-width: 100%;
+  width: 60%;
+  margin-right: 20px;
+  
 }
 .cardComponent_wrapper {
   width: 25rem;
@@ -81,11 +83,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:1200px){
+  .component_wrapper{justify-content: space-evenly;}
+  
 }

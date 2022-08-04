@@ -12,7 +12,7 @@ function App() {
     <Provider store={store}>
       <div className="App">
         {/* <Header /> */}
-        {/* <div className="activity_information_Mainwrapper">
+        <div className="activity_information_Mainwrapper">
           <div style={{ width: "100%" }}>
             <div className="activity_information_wrapper">
               <h3>ACTIVITY</h3>
@@ -20,7 +20,7 @@ function App() {
             </div>
             <div className="border"></div>
           </div>
-        </div> */}
+        </div>
 
         <div className="component_wrapper">
           <div className="component_wrapper_newTaskAndDisplayed">

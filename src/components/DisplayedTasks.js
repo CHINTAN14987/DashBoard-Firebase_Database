@@ -17,6 +17,7 @@ const DisplayedTasks = () => {
         <span>Status</span>
       </div>
       <div className="row">
+        {console.log(Addedvalue)}
         {Addedvalue ? (
           <div className="addeditems_wrapper">
             {Addedvalue.map((item) => {
@@ -32,6 +33,7 @@ const DisplayedTasks = () => {
                   >
                     {item.newtask}
                   </span>
+                  <span>{item.body}</span>
                   <span>{item.aissgnedTo} </span>
                   <span>{item.endDate}</span>
                   <span>{item.subject}</span>
