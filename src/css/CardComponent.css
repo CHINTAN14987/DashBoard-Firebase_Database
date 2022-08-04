@@ -1,0 +1,24 @@
+.card_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    margin: 10px 0;
+    display: flex;justify-content: space-between;
+}
+.card span{display: flex;
+align-items: center;
+justify-content: center;
+}
+.cardicon{
+    font-size: 40px;
+    color: blue;
+    padding: 10px;
+}
+.second{color: red;
+    border: 1px solid red !important;}
+.third{color: green;
+    border: 1px solid green !important;}
+.icon_wrapper span{
+    border-radius: 50%;
+border: 1px solid blue ;}

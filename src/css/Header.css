@@ -12,6 +12,7 @@
 .flex_wrapper {
   display: flex;
   width: 100%;
+  position:relative;
 }
 
 .Navbar_Progress {
@@ -20,7 +21,37 @@
   align-items: center;
   background-color: #fff;
 }
+/* .flex_wrapper input[type="checkbox"] {
+  width: 30px;                        
+  height: 30px;                       
+  clip-path: circle(46% at 50% 50%);   
+  accent-color: white;
+}
+input[type='checkbox']:checked {
+  background-color: #023047;
+}
+input[type='checkbox']:checked:after {
+  color:white;
+} */
+.checkbox{
+ 
+  color: #2fbe6d !important;
 
+}
+/* .headerContentLast{
+  flex:1;
+} */
+.checkboxwrapper{
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  width:20px;
+  border: transparent;
+}
 .status_button_left {
   flex: 1;
   background-color: #2fbe6d;
@@ -45,22 +76,30 @@
 }
 
 .header_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-.header_container span {
+.header_container .heading {
   position: absolute;
   font-size: 1.5vw;
   top: 50%;
   left: 28%;
   transform: translate(-50%, -50%);
+  color:#414952;
+  font-size: 1vw;
+  font-weight: 600;
 }
 .new {
   background-color: #fdf0d4;
+  /* border-bottom: 2px solid orange; */
 }
-
+.outline{
+  border-bottom: 2px solid orange;
+  flex: 1;
+}
 .newtraingle {
   border-left-color: #fdf0d4;
 }
@@ -72,4 +111,33 @@
 .workingtriangle,
 .nurturingtriangle {
   border-left-color: #e2e9f3;
+}
+.headerContentLast_innerwrapper{
+  width: 90%;
+}
+@media screen and (max-width:1200px){
+  .heading{
+    left:35% !important;
+    font-size: 1.5vw !important;
+  }
+  .header_container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .flex_wrapper{margin: 1rem 0;}
+}
+
+
+@media screen and (max-width:756px){
+  .header_container{
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 0;
+  }
+  .heading{
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width:500px){
+  .heading{
+    font-size: 12px !important;
+  }
 }

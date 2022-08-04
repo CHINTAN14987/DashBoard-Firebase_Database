@@ -53,7 +53,7 @@ const NewTask = () => {
   const handleCancel = () => {
     setSelectedNewTask("");
     setSelectedAssignedTo("");
-    setEndDate([]);
+    setEndDate("");
     setStartDate("");
     setRemindDate("");
     setInput("");

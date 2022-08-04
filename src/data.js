@@ -35,28 +35,38 @@ export const data = [
 
 export const StatusData = [
   {
+    id: 1,
     productStatus: "Informed Product Features",
     date: new Date().toDateString(),
-    liveStatus: "you Contacted with",
+    liveStatus: "You Contacted with",
+    employeename: "Charles Gomez",
   },
   {
+    id: 2,
     productStatus: "Send Product Brochure",
     date: new Date().toDateString(),
-    liveStatus: "you Contacted with",
+    liveStatus: "You Contacted with",
+    employeename: "Arun Var",
   },
   {
+    id: 3,
     productStatus: "Send Product Brochure",
     date: new Date().toDateString(),
-    liveStatus: "you Contacted with",
+    liveStatus: "You Contacted with",
+    employeename: "Arun Var",
   },
   {
+    id: 4,
     productStatus: "Informed Product Features",
     date: new Date().toDateString(),
-    liveStatus: "you Contacted with",
+    liveStatus: "You Contacted with",
+    employeename: "Arun Var",
   },
   {
+    id: 5,
     productStatus: "Informed Product Features",
     date: new Date().toDateString(),
-    liveStatus: "you Contacted with",
+    liveStatus: "You Contacted with",
+    employeename: "Charles Gomez",
   },
 ];
